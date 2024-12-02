@@ -1,5 +1,4 @@
 from openai import OpenAI
-from utils import load_api_key
 import yaml
 
 class GuessingGame:
