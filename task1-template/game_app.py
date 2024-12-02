@@ -88,6 +88,10 @@ class GameApp:
         if st.button("Start a New Game"):
             self.reset_game()
             
+        # Resolve the uninizialized issue (some deployment issue not sure why this is necessary, should already be initialized)
+        if "show_hints" not in st.session_state:
+            st.session_state.show_hints = False
+            
         # Display hints if the user clicks "Get Hints"
         if st.button("Get Hints"):
             st.session_state.show_hints = not st.session_state.show_hints
