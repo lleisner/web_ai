@@ -1,5 +1,6 @@
 from openai import OpenAI
 import yaml
+import os
 
 class GuessingGame:
     def __init__(self, api_key, instructions="instructions.yaml"):
@@ -10,6 +11,8 @@ class GuessingGame:
             instructions (str, optional): Path to the YAML file containing prompts. Defaults to "instructions.yaml".
         """
         self.client = OpenAI(api_key=api_key)
+        
+        instructions_path = os.path.join(os.path.dirname(__file__), instructions)
         
         with open(instructions, "r") as file:
             self.prompts = yaml.safe_load(file)
