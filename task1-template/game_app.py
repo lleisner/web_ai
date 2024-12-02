@@ -83,14 +83,31 @@ class GameApp:
         Render the Streamlit UI and manage the game loop.
         """
         st.header("🎮 Guess the Animal!")
+        
+
+        # Initialize session state for chat history and game over status
+        # Not sure why this is necessary, should already be initialized, but showing uninitialized error otherwise. 
+        if "chat_history" not in st.session_state:
+            st.session_state.chat_history = []
+
+        if "show_hints" not in st.session_state:
+            st.session_state.show_hints = False
+            
+        if "used_animals" not in st.session_state:
+            st.session_state.used_animals = set()
+            
+        if "show_solution" not in st.session_state:
+            st.session_state.show_solution = False
+            
+        if "game_over" not in st.session_state:
+            st.session_state.game_over = False
+        
+        if "game_stats" not in st.session_state:
+            st.session_state.game_stats = []
 
         # Always provide the "Start a New Game" button
         if st.button("Start a New Game"):
             self.reset_game()
-            
-        # Resolve the uninizialized issue (some deployment issue not sure why this is necessary, should already be initialized)
-        if "show_hints" not in st.session_state:
-            st.session_state.show_hints = False
             
         # Display hints if the user clicks "Get Hints"
         if st.button("Get Hints"):
