@@ -14,7 +14,7 @@ class GuessingGame:
         
         instructions_path = os.path.join(os.path.dirname(__file__), instructions)
         
-        with open(instructions, "r") as file:
+        with open(instructions_path, "r") as file:
             self.prompts = yaml.safe_load(file)
         
         self.used_animals = set()  
