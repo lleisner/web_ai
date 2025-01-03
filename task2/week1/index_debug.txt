@@ -1,0 +1,218 @@
+home: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html
+page: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html
+welcome: https://vm009.rz.uos.de/crawl/index.html
+to: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+the: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html
+platypus: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+ornithorhynchus: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html
+anatinus: https://vm009.rz.uos.de/crawl/index.html
+is: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html
+a: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html
+semiaquatic: https://vm009.rz.uos.de/crawl/index.html
+egg-laying: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page1.html
+mammal: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page1.html
+endemic: https://vm009.rz.uos.de/crawl/index.html
+eastern: https://vm009.rz.uos.de/crawl/index.html
+australia: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+including: https://vm009.rz.uos.de/crawl/index.html
+tasmania: https://vm009.rz.uos.de/crawl/index.html
+sole: https://vm009.rz.uos.de/crawl/index.html
+living: https://vm009.rz.uos.de/crawl/index.html
+representative: https://vm009.rz.uos.de/crawl/index.html
+or: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html
+monotypic: https://vm009.rz.uos.de/crawl/index.html
+taxon: https://vm009.rz.uos.de/crawl/index.html
+of: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html
+its: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page4.html
+family: https://vm009.rz.uos.de/crawl/index.html
+ornithorhynchidae: https://vm009.rz.uos.de/crawl/index.html
+and: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html
+genus: https://vm009.rz.uos.de/crawl/index.html
+though: https://vm009.rz.uos.de/crawl/index.html
+number: https://vm009.rz.uos.de/crawl/index.html
+related: https://vm009.rz.uos.de/crawl/index.html
+species: https://vm009.rz.uos.de/crawl/index.html
+appear: https://vm009.rz.uos.de/crawl/index.html
+in: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html
+fossil: https://vm009.rz.uos.de/crawl/index.html
+record: https://vm009.rz.uos.de/crawl/index.html
+1: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html
+2: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html
+3: https://vm009.rz.uos.de/crawl/index.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html
+this: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html
+unique: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+features: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+make: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+it: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html
+important: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+study: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+evolutionary: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+biology: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+recognisable: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+iconic: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html
+symbol: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html
+culturally: https://vm009.rz.uos.de/crawl/page3.html
+significant: https://vm009.rz.uos.de/crawl/page3.html
+several: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+aboriginal: https://vm009.rz.uos.de/crawl/page3.html
+peoples: https://vm009.rz.uos.de/crawl/page3.html
+who: https://vm009.rz.uos.de/crawl/page3.html
+also: https://vm009.rz.uos.de/crawl/page3.html
+used: https://vm009.rz.uos.de/crawl/page3.html
+hunt: https://vm009.rz.uos.de/crawl/page3.html
+for: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page5.html
+food: https://vm009.rz.uos.de/crawl/page3.html
+has: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+appeared: https://vm009.rz.uos.de/crawl/page3.html
+as: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+national: https://vm009.rz.uos.de/crawl/page3.html
+mascot: https://vm009.rz.uos.de/crawl/page3.html
+on: https://vm009.rz.uos.de/crawl/page3.html
+reverse: https://vm009.rz.uos.de/crawl/page3.html
+australian: https://vm009.rz.uos.de/crawl/page3.html
+twenty-cent: https://vm009.rz.uos.de/crawl/page3.html
+coin: https://vm009.rz.uos.de/crawl/page3.html
+an: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page5.html
+emblem: https://vm009.rz.uos.de/crawl/page3.html
+state: https://vm009.rz.uos.de/crawl/page3.html
+new: https://vm009.rz.uos.de/crawl/page3.html
+south: https://vm009.rz.uos.de/crawl/page3.html
+wales: https://vm009.rz.uos.de/crawl/page3.html
+6: https://vm009.rz.uos.de/crawl/page3.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html
+world: https://vm009.rz.uos.de/crawl/page6.html
+pixels: https://vm009.rz.uos.de/crawl/page6.html
+bytes: https://vm009.rz.uos.de/crawl/page6.html
+so: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page5.html
+torn: https://vm009.rz.uos.de/crawl/page6.html
+lived: https://vm009.rz.uos.de/crawl/page6.html
+quirky: https://vm009.rz.uos.de/crawl/page6.html
+geeky: https://vm009.rz.uos.de/crawl/page6.html
+unicorn: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+coded: https://vm009.rz.uos.de/crawl/page6.html
+with: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+fins: https://vm009.rz.uos.de/crawl/page6.html
+deft: https://vm009.rz.uos.de/crawl/page6.html
+while: https://vm009.rz.uos.de/crawl/page6.html
+debugged: https://vm009.rz.uos.de/crawl/page6.html
+every: https://vm009.rz.uos.de/crawl/page6.html
+breath: https://vm009.rz.uos.de/crawl/page6.html
+left: https://vm009.rz.uos.de/crawl/page6.html
+did: https://vm009.rz.uos.de/crawl/page6.html
+you: https://vm009.rz.uos.de/crawl/page6.html
+know: https://vm009.rz.uos.de/crawl/page6.html
+said: https://vm009.rz.uos.de/crawl/page6.html
+plat: https://vm009.rz.uos.de/crawl/page6.html
+glint: https://vm009.rz.uos.de/crawl/page6.html
+his: https://vm009.rz.uos.de/crawl/page6.html
+eye: https://vm009.rz.uos.de/crawl/page6.html
+that: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page4.html
+i'm: https://vm009.rz.uos.de/crawl/page6.html
+lays: https://vm009.rz.uos.de/crawl/page6.html
+eggs: https://vm009.rz.uos.de/crawl/page6.html
+oh: https://vm009.rz.uos.de/crawl/page6.html
+my: https://vm009.rz.uos.de/crawl/page6.html
+chuckled: https://vm009.rz.uos.de/crawl/page6.html
+i've: https://vm009.rz.uos.de/crawl/page6.html
+horn: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+might: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page6.html
+but: https://vm009.rz.uos.de/crawl/page6.html
+can't: https://vm009.rz.uos.de/crawl/page6.html
+run: https://vm009.rz.uos.de/crawl/page6.html
+basic: https://vm009.rz.uos.de/crawl/page6.html
+scripts: https://vm009.rz.uos.de/crawl/page6.html
+try: https://vm009.rz.uos.de/crawl/page6.html
+i: https://vm009.rz.uos.de/crawl/page6.html
+together: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+they: https://vm009.rz.uos.de/crawl/page6.html
+ventured: https://vm009.rz.uos.de/crawl/page6.html
+realms: https://vm009.rz.uos.de/crawl/page6.html
+code: https://vm009.rz.uos.de/crawl/page6.html
+lore: https://vm009.rz.uos.de/crawl/page6.html
+fixing: https://vm009.rz.uos.de/crawl/page6.html
+glitches: https://vm009.rz.uos.de/crawl/page6.html
+chasing: https://vm009.rz.uos.de/crawl/page6.html
+bugs: https://vm009.rz.uos.de/crawl/page6.html
+galore: https://vm009.rz.uos.de/crawl/page6.html
+nerdy: https://vm009.rz.uos.de/crawl/page6.html
+tale: https://vm009.rz.uos.de/crawl/page6.html
+uniquely: https://vm009.rz.uos.de/crawl/page6.html
+spun: https://vm009.rz.uos.de/crawl/page6.html
+made: https://vm009.rz.uos.de/crawl/page6.html, https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+coding: https://vm009.rz.uos.de/crawl/page6.html
+fun: https://vm009.rz.uos.de/crawl/page6.html
+author:: https://vm009.rz.uos.de/crawl/page6.html
+chatgpt-4: https://vm009.rz.uos.de/crawl/page6.html
+7: https://vm009.rz.uos.de/crawl/page6.html
+1799: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+first: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page1.html
+scientists: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+examine: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+preserved: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+body: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+judged: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+fake: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+animals: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+sewn: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page1.html
+5: https://vm009.rz.uos.de/crawl/page2.html, https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page5.html
+uni: https://vm009.rz.uos.de/crawl/page2.html
+osnabrã¼ck: https://vm009.rz.uos.de/crawl/page2.html
+european: https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page1.html
+literature: https://vm009.rz.uos.de/crawl/page5.html
+art: https://vm009.rz.uos.de/crawl/page5.html
+last: https://vm009.rz.uos.de/crawl/page5.html
+thousand: https://vm009.rz.uos.de/crawl/page5.html
+years: https://vm009.rz.uos.de/crawl/page5.html
+been: https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+depicted: https://vm009.rz.uos.de/crawl/page5.html
+white: https://vm009.rz.uos.de/crawl/page5.html
+horse-like: https://vm009.rz.uos.de/crawl/page5.html
+goat-like: https://vm009.rz.uos.de/crawl/page5.html
+animal: https://vm009.rz.uos.de/crawl/page5.html
+long: https://vm009.rz.uos.de/crawl/page5.html
+straight: https://vm009.rz.uos.de/crawl/page5.html
+spiralling: https://vm009.rz.uos.de/crawl/page5.html
+grooves: https://vm009.rz.uos.de/crawl/page5.html
+cloven: https://vm009.rz.uos.de/crawl/page5.html
+hooves: https://vm009.rz.uos.de/crawl/page5.html
+sometimes: https://vm009.rz.uos.de/crawl/page5.html
+goat's: https://vm009.rz.uos.de/crawl/page5.html
+beard: https://vm009.rz.uos.de/crawl/page5.html
+middle: https://vm009.rz.uos.de/crawl/page5.html
+ages: https://vm009.rz.uos.de/crawl/page5.html
+renaissance: https://vm009.rz.uos.de/crawl/page5.html
+was: https://vm009.rz.uos.de/crawl/page5.html
+commonly: https://vm009.rz.uos.de/crawl/page5.html
+described: https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+extremely: https://vm009.rz.uos.de/crawl/page5.html
+wild: https://vm009.rz.uos.de/crawl/page5.html
+woodland: https://vm009.rz.uos.de/crawl/page5.html
+creature: https://vm009.rz.uos.de/crawl/page5.html, https://vm009.rz.uos.de/crawl/page4.html
+purity: https://vm009.rz.uos.de/crawl/page5.html
+grace: https://vm009.rz.uos.de/crawl/page5.html
+which: https://vm009.rz.uos.de/crawl/page5.html
+could: https://vm009.rz.uos.de/crawl/page5.html
+be: https://vm009.rz.uos.de/crawl/page5.html
+captured: https://vm009.rz.uos.de/crawl/page5.html
+only: https://vm009.rz.uos.de/crawl/page5.html
+by: https://vm009.rz.uos.de/crawl/page5.html
+virgin: https://vm009.rz.uos.de/crawl/page5.html
+unusual: https://vm009.rz.uos.de/crawl/page1.html
+appearance: https://vm009.rz.uos.de/crawl/page1.html
+duck-billed: https://vm009.rz.uos.de/crawl/page1.html
+beaver-tailed: https://vm009.rz.uos.de/crawl/page1.html
+otter-footed: https://vm009.rz.uos.de/crawl/page1.html
+at: https://vm009.rz.uos.de/crawl/page1.html
+baffled: https://vm009.rz.uos.de/crawl/page1.html
+naturalists: https://vm009.rz.uos.de/crawl/page1.html
+4: https://vm009.rz.uos.de/crawl/page1.html, https://vm009.rz.uos.de/crawl/page4.html, https://vm009.rz.uos.de/crawl/page4.html
+legendary: https://vm009.rz.uos.de/crawl/page4.html
+since: https://vm009.rz.uos.de/crawl/page4.html
+antiquity: https://vm009.rz.uos.de/crawl/page4.html
+beast: https://vm009.rz.uos.de/crawl/page4.html
+single: https://vm009.rz.uos.de/crawl/page4.html
+large: https://vm009.rz.uos.de/crawl/page4.html
+pointed: https://vm009.rz.uos.de/crawl/page4.html
+spiraling: https://vm009.rz.uos.de/crawl/page4.html
+projecting: https://vm009.rz.uos.de/crawl/page4.html
+from: https://vm009.rz.uos.de/crawl/page4.html
+forehead: https://vm009.rz.uos.de/crawl/page4.html

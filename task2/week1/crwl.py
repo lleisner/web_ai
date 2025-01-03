@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin, urlparse
+from collections import defaultdict
 
 prefix = 'https://www.ikw.uni-osnabrueck.de/en/'
 
