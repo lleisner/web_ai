@@ -129,4 +129,4 @@ if __name__ == "__main__":
 
     # Run Flask app
     flask_app = FlaskAppHelper(whoosh_helper)
-    flask_app.run()
+    flask_app.run(host="0.0.0.0", port=5000)
