@@ -1,9 +1,12 @@
-from flask import Flask
-
+from flask import Flask, request
 app = Flask(__name__)
-app.config['APPLICATION_ROOT'] = '/u045/test/web_ai/task2/week1'
+
 
 @app.route("/")
-def home():
-    return "Hello, World! This is a test Flask app running on Apache2."
+def start():
+    return "<form action='reversed' method='get'><input name='rev'></input></form>"
 
+
+@app.route("/reversed")
+def reversed():
+    return "<h1>"+request.args.get('rev')[::-1]+"</h1>"
