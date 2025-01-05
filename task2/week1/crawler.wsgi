@@ -6,5 +6,7 @@ sys.path.insert(1, path)
 import os
 #os.chdir(path)
 
-from app import app as application
+
+
+from test import app as application
 

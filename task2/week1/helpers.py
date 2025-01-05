@@ -9,6 +9,7 @@ import shutil
 import os
 import requests
 from bs4 import BeautifulSoup
+import traceback
 
 
 class WhooshHelper:
@@ -222,6 +223,10 @@ class FlaskAppHelper:
             query = request.args.get("q", "")
             results = self.whoosh_helper.search(query)
             return render_template("results.html", results=results)
+        
+        @self.app.errorhandler(500)
+        def internal_error(exception):
+            return "<pre>"+traceback.format_exc()+"</pre>"
 
     def run(self, host: str = "0.0.0.0", port: int = 5000) -> None:
         """Runs the Flask app.
