@@ -224,6 +224,10 @@ class FlaskAppHelper:
             results = self.whoosh_helper.search(query)
             return render_template("results.html", results=results)
         
+        @self.app.route('/user/<username>') 
+        def profile(username): 
+            return f"User: {username}"
+        
         @self.app.errorhandler(500)
         def internal_error(exception):
             return "<pre>"+traceback.format_exc()+"</pre>"

@@ -5,7 +5,7 @@ prefix = 'https://vm009.rz.uos.de/crawl/'
 start_url = prefix + 'index.html'
 
 # Create Whoosh helper
-whoosh_helper = WhooshHelper(store_content=False)
+whoosh_helper = WhooshHelper(store_content=True)
 
 # Initialize Crawler
 crawler = Crawler(start_url, prefix, whoosh_helper)
