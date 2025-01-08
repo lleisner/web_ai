@@ -73,7 +73,6 @@ class Crawler:
         Returns:
             None
         """
-        #relative_url = urlparse(url).path
         self.whoosh_helper.add_document(url=url, title=title, content=text)
 
     def extract_links(self, soup: BeautifulSoup, base_url: str) -> None:
