@@ -56,7 +56,6 @@ class Crawler:
 
                 self.index_page(url, title, text)
                 self.extract_links(soup, url)
-                print(url)
 
             except requests.exceptions.RequestException as e:
                 print(f"Network error while processing {url}: {e}")

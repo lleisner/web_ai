@@ -130,17 +130,15 @@ class WhooshHelper:
             results.formatter = highlight.HtmlFormatter(tagname="b")
 
             unique_results = {}
-            for idx, result in enumerate(results, 1):
-                
-                #url = result["url"]
-                dynamic_url = f"/page{idx}"
-                if dynamic_url not in unique_results:
+            for result in results:
+                url = result["url"]
+                if url not in unique_results:
                     if self.store_content:
                         # Use stored content for highlighting
                         highlight_result = result.highlights("content")
                     else:
                         # Dynamically fetch content for highlighting
-                        content = self.fetch_page_content(result["url"])
+                        content = self.fetch_page_content(url)
                         if content:
                             # Use dynamically fetched content to highlight
                             highlight_result = results.highlighter.highlight_hit(result, "content", text=content)
@@ -152,8 +150,8 @@ class WhooshHelper:
                         highlight_result = re.sub(r'<b class="match term\d+">', '<b>', highlight_result)
                         highlight_result = highlight_result.replace('</b>', '</b>')
 
-                    unique_results[dynamic_url] = {
-                        "url": dynamic_url,
+                    unique_results[url] = {
+                        "url": url,
                         "title": result["title"],
                         "description": highlight_result or "No description available."
                     }
@@ -214,7 +212,6 @@ class FlaskAppHelper:
                 str: HTML content of the home page.
             """
             return render_template("search_form.html")
-
 
         @self.app.route("/search")
         def search():
