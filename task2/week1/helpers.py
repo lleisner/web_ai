@@ -10,6 +10,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import traceback
+from urllib.parse import urlparse
 
 
 class WhooshHelper:
@@ -131,6 +132,7 @@ class WhooshHelper:
 
             unique_results = {}
             for result in results:
+                url = urlparse(result["url"]).path # use relative path
                 url = result["url"]
                 if url not in unique_results:
                     if self.store_content:
@@ -222,6 +224,7 @@ class FlaskAppHelper:
             """
             query = request.args.get("q", "")
             results = self.whoosh_helper.search(query)
+            [print(f"result url {idx} for query {query}: {result['url']}, relative url: {urlparse(result['url']).path}") for idx, result in enumerate(results, 1)]
             return render_template("results.html", results=results)
         
         @self.app.route('/user/<username>') 

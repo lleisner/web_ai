@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from helpers import FlaskAppHelper, WhooshHelper
 import re
-
+from urllib.parse import urlparse
 
 
 class Crawler:
@@ -73,6 +73,7 @@ class Crawler:
         Returns:
             None
         """
+        #relative_url = urlparse(url).path
         self.whoosh_helper.add_document(url=url, title=title, content=text)
 
     def extract_links(self, soup: BeautifulSoup, base_url: str) -> None:
