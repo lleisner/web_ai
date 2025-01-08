@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search Results</title>
-    </head>
-    <body>
-        <h1>{% if results|length > 1 %}Search Results{% else %}Page Details{% endif %}</h1>
-    
-        <ul>
-            {% for result in results %}
-                <li>
-                    <!-- Use url_for to link to the serve_page route dynamically -->
-                    <a href="{{ url_for('serve_page', page_id=loop.index) }}">{{ result['title'] }}</a><br>
-                    <p>{{ result['description'] }}</p>
-                </li>
-            {% endfor %}
-        </ul>
-    
-        <!-- Use url_for for the "Back to search" link -->
-        <a href="{{ url_for('home') }}">Back to search</a>
-    </body>
-    </html>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>{% if results|length > 1 %}Search Results{% else %}Page Details{% endif %}</h1>
+
+    <ul>
+        {% for result in results %}
+            <li>
+                <a href="{{ result['url'] }}">{{ result['title'] }}</a><br>
+                <p>{{ result['description'] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('home') }}">Back to search</a>
+</body>
+</html>

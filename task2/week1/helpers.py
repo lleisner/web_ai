@@ -214,19 +214,6 @@ class FlaskAppHelper:
                 str: HTML content of the home page.
             """
             return render_template("search_form.html")
-        
-        @self.app.route("/page/<int:page_id>")
-        def serve_page(page_id):
-            """Dynamically serve a crawled page by its page_id."""
-            try:
-                # Retrieve all search results
-                results = self.whoosh_helper.search("")  # Retrieve all indexed pages
-                result = results[page_id - 1]  # Adjust index for 1-based page_id
-                
-                # Render the results.html template with a single result
-                return render_template("results.html", results=[result])
-            except IndexError:
-                return render_template("error.html", message="Page not found"), 404
 
 
         @self.app.route("/search")
