@@ -33,7 +33,7 @@ def get_lat_lon(city_name):
         print(f"Error fetching coordinates for {city_name}: {e}")
         return None, None
 
-def get_weather(lat, lon):
+def get_weather(lat, lon, city_name):
     """Fetch real-time weather data from Open-Meteo for given latitude & longitude."""
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true"
 
@@ -71,7 +71,7 @@ def get_weather(lat, lon):
 
         condition_text = condition_mapping.get(condition, "Unknown conditions")
 
-        return f"The weather in this location is {temperature}°C, {condition_text}. Wind speed: {wind_speed} km/h."
+        return f"The weather in the city of '{city_name}' is {temperature}°C, {condition_text}. Wind speed: {wind_speed} km/h."
 
     except Exception as e:
         print(f"Error fetching weather data: {e}")

@@ -3,3 +3,4 @@ flask-sqlalchemy
 requests
 better-profanity
 geopy
+flask-cors

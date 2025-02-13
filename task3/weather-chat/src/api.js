@@ -1,3 +1,9 @@
+// Dynamically determine the backend URL based on the environment
+const LOCAL_URL = "http://localhost:5001";
+const SERVER_URL = "http://vm146.rz.uni-osnabrueck.de/u045/channel.wsgi";
+const BASE_URL = window.location.hostname === "localhost" ? LOCAL_URL : SERVER_URL;
+
+// Hub URL (for fetching available channels)
 const HUB_URL = "http://localhost:5555";
 
 /**
@@ -23,7 +29,6 @@ export async function fetchMessages(channelEndpoint, authKey) {
 
     return response.json();
 }
-
 
 /**
  * Post a new message to a channel

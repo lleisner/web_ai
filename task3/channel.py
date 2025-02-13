@@ -70,7 +70,7 @@ def send_message():
         if lat is None or lon is None:
             bot_response = f"Could not find weather data for '{city_name}'. Try a different city."
         else:
-            weather_info = get_weather(lat, lon)
+            weather_info = get_weather(lat, lon, city_name)
             bot_response = f"{random.choice(funny_responses)} {weather_info}"
 
         message_store.add_message(bot_response, "WeatherBot", message['timestamp'])
