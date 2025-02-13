@@ -1,125 +1,105 @@
-## channel.py - a simple message channel
-##
-
-from flask import Flask, request, render_template, jsonify
-import json
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 import requests
+import random
+import logging
+from config import *
+from message import MessageStore
+from better_profanity import profanity
+from get_weather import get_lat_lon, get_weather, detect_city_name, funny_responses
 
-# Class-based application configuration
-class ConfigClass(object):
-    """ Flask application config """
+# Setup logging
+logging.basicConfig(level=logging.INFO)
 
-    # Flask settings
-    SECRET_KEY = 'This is an INSECURE secret!! DO NOT use this in production!!'
-
-# Create Flask app
+# Flask setup
 app = Flask(__name__)
-app.config.from_object(__name__ + '.ConfigClass')  # configuration
-app.app_context().push()  # create an app context before initializing db
+CORS(app)
+app.config.from_object('config')
 
-HUB_URL = 'http://localhost:5555'
-HUB_AUTHKEY = '1234567890'
-CHANNEL_AUTHKEY = '0987654321'
-CHANNEL_NAME = "The One and Only Channel"
-CHANNEL_ENDPOINT = "http://localhost:5001" # don't forget to adjust in the bottom of the file
-CHANNEL_FILE = 'messages.json'
-CHANNEL_TYPE_OF_SERVICE = 'aiweb24:chat'
+# Initialize message store
+message_store = MessageStore(CHANNEL_FILE, MAX_MESSAGES)
 
-@app.cli.command('register')
-def register_command():
-    global CHANNEL_AUTHKEY, CHANNEL_NAME, CHANNEL_ENDPOINT
-
-    # send a POST request to server /channels
-    response = requests.post(HUB_URL + '/channels', headers={'Authorization': 'authkey ' + HUB_AUTHKEY},
-                             data=json.dumps({
-                                "name": CHANNEL_NAME,
-                                "endpoint": CHANNEL_ENDPOINT,
-                                "authkey": CHANNEL_AUTHKEY,
-                                "type_of_service": CHANNEL_TYPE_OF_SERVICE,
-                             }))
-
-    if response.status_code != 200:
-        print("Error creating channel: "+str(response.status_code))
-        print(response.text)
-        return
-
-def check_authorization(request):
-    global CHANNEL_AUTHKEY
-    # check if Authorization header is present
-    if 'Authorization' not in request.headers:
-        return False
-    # check if authorization header is valid
-    if request.headers['Authorization'] != 'authkey ' + CHANNEL_AUTHKEY:
-        return False
-    return True
+# Authorization decorator
+def require_auth(f):
+    def wrapper(*args, **kwargs):
+        if 'Authorization' not in request.headers or request.headers['Authorization'] != 'authkey ' + CHANNEL_AUTHKEY:
+            return "Invalid authorization", 400
+        return f(*args, **kwargs)
+    wrapper.__name__ = f.__name__
+    return wrapper
 
 @app.route('/health', methods=['GET'])
+@require_auth
 def health_check():
-    global CHANNEL_NAME
-    if not check_authorization(request):
-        return "Invalid authorization", 400
-    return jsonify({'name':CHANNEL_NAME}),  200
+    return jsonify({'name': CHANNEL_NAME}), 200
 
-# GET: Return list of messages
 @app.route('/', methods=['GET'])
-def home_page():
-    if not check_authorization(request):
-        return "Invalid authorization", 400
-    # fetch channels from server
-    return jsonify(read_messages())
+@require_auth
+def get_messages():
+    return jsonify(message_store.read_messages())
 
-# POST: Send a message
 @app.route('/', methods=['POST'])
+@require_auth
 def send_message():
-    # fetch channels from server
-    # check authorization header
-    if not check_authorization(request):
-        return "Invalid authorization", 400
-    # check if message is present
+    """Handles incoming messages, applies profanity filter, and generates weather responses."""
     message = request.json
-    if not message:
-        return "No message", 400
-    if not 'content' in message:
-        return "No content", 400
-    if not 'sender' in message:
-        return "No sender", 400
-    if not 'timestamp' in message:
-        return "No timestamp", 400
-    if not 'extra' in message:
-        extra = None
+    if not message or 'content' not in message or 'sender' not in message or 'timestamp' not in message:
+        return jsonify({"status": "error", "error": "Invalid message format"}), 400
+
+    user_message = message['content'].strip().lower()
+    sender = message['sender']
+
+    # **Profanity Check**
+    if profanity.contains_profanity(user_message):
+        return jsonify({"status": "blocked", "error": "Message contains banned words!"}), 200
+
+    # **Store the User Message**
+    response = message_store.add_message(
+        message['content'], sender, message['timestamp'], message.get('extra')
+    )
+
+    if response != "OK":
+        return jsonify({"status": "error", "error": response}), 400
+    
+    # **Detect City Name & Provide Weather**
+    city_name = detect_city_name(user_message)
+    
+    if city_name:
+        lat, lon = get_lat_lon(city_name)
+
+        if lat is None or lon is None:
+            bot_response = f"Could not find weather data for '{city_name}'. Try a different city."
+        else:
+            weather_info = get_weather(lat, lon)
+            bot_response = f"{random.choice(funny_responses)} {weather_info}"
+
+        message_store.add_message(bot_response, "WeatherBot", message['timestamp'])
+
+    return jsonify({"status": "ok"}), 200
+
+
+@app.route("/check_profanity", methods=["POST"])
+def check_profanity():
+    data = request.json
+    text = data.get("text", "")
+
+    is_profane = profanity.contains_profanity(text)
+    return jsonify({"is_profane": is_profane})
+
+# Channel registration
+@app.cli.command('register')
+def register_channel():
+    response = requests.post(
+        HUB_URL + '/channels',
+        headers={'Authorization': 'authkey ' + HUB_AUTHKEY},
+        json={"name": CHANNEL_NAME, "endpoint": CHANNEL_ENDPOINT, "authkey": CHANNEL_AUTHKEY, "type_of_service": CHANNEL_TYPE_OF_SERVICE}
+    )
+
+    if response.status_code == 200:
+        print("Channel registered successfully!")
     else:
-        extra = message['extra']
-    # add message to messages
-    messages = read_messages()
-    messages.append({'content': message['content'],
-                     'sender': message['sender'],
-                     'timestamp': message['timestamp'],
-                     'extra': extra,
-                     })
-    save_messages(messages)
-    return "OK", 200
+        print(f"Error registering channel: {response.status_code} - {response.text}")
 
-def read_messages():
-    global CHANNEL_FILE
-    try:
-        f = open(CHANNEL_FILE, 'r')
-    except FileNotFoundError:
-        return []
-    try:
-        messages = json.load(f)
-    except json.decoder.JSONDecodeError:
-        messages = []
-    f.close()
-    return messages
-
-def save_messages(messages):
-    global CHANNEL_FILE
-    with open(CHANNEL_FILE, 'w') as f:
-        json.dump(messages, f)
-
-# Start development web server
-# run flask --app channel.py register
-# to register channel with hub
 
 if __name__ == '__main__':
     app.run(port=5001, debug=True)

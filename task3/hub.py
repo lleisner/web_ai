@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 import datetime
 import requests
+from flask_cors import CORS
 
 db = SQLAlchemy()
 
@@ -31,6 +32,7 @@ class ConfigClass(object):
 
 # Create Flask app
 app = Flask(__name__)
+CORS(app)
 app.config.from_object(__name__ + '.ConfigClass')  # configuration
 app.app_context().push()  # create an app context before initializing db
 db.init_app(app)  # initialize database
