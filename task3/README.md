@@ -1,46 +1,73 @@
-# Start Code for Task 3
+# Weather Chat
+**Task 3 Submission for AI and the Web**  
 
-AI & the Web, winter term 2024/2025
+This project implements a **distributed message board channel** named **Weather Chat**, deployed on the university server. It includes:
+- A **Flask-based channel server** (`channel.py`) that manages messages and integrates with a **weather API**.
+- A **React-based client** (`weather-chat`) that provides an improved chat interface using npm.
+- **A local hub instance (`hub.py`)** to manage channels.
+- **Deployment on an Apache server** following the university setup.
 
-## Running the code on your development server
+---
 
-1. Create and activate a virtual environment, install everything from requirements.txt
+## Task Completion Summary  
 
-2. Run hub
+### **1️ Channel Server**
+- **Channel Name & Topic**  
+  - **Name:** *Weather Chat*  
+  - **Topic:** Discuss the weather and get real-time weather updates.
+  - **Welcome Message:** First message in the chat explains the channel’s purpose.
 
-    > python hub.py
+- **Message Limitation**  
+  - Stores only the **latest 99 messages** to avoid excessive storage.
 
-3. Run the channel server (different shell)
+- **Message Filtering**  
+  - **Profanity filter** prevents offensive words in both messages and usernames. (using the better_profanity library)
 
-    > python channel.py
+- **Active Responses**  
+  - The bot **automatically detects city names** in user messages and provides live weather data.  
+  - Uses **Open-Meteo API** for real-time weather updates.  
+  - Humorously suggests weather updates with messages like:  
+    *"My neural circuits just had a hunch... You need to know the weather!"*
 
-4. Register the channel server with the hub (another different shell)
+- **Deployment**  
+  - Hosted on the **university server** and registered with a seperate hub instance (huge issues getting it on the public hub for some reason).
+  - **Accessible via:**  
+    - `http://vm146.rz.uni-osnabrueck.de/~u045/channel.wsgi/`
 
-    > flask --app channel.py register
-    
-5. Now start the client (new shell of shell from 4.) 
+---
 
-    > python client.py
+### **React Client**
+- **Replaces Flask Client**  
+  - Implements all functionality of the basic Flask client.
+  - **Cleaner UI** with improved styling and layout.
 
-6. Open the client, link is displayed after client start (e.g., http://localhost:5005)
+- **Fancier Design & Extra Features**
+  - **Chat Bubbles** with clear sender identification and timestamps.
+  - **Username Persistence** (saved locally in the browser).
+  - **Auto-scrolling** to the latest messages.
+  - **Profanity check for usernames** before allowing a user to join.
 
+- **Deployment on University Server**  
+  - **Client is fully deployed** and available at:  
+    - `http://vm146.rz.uni-osnabrueck.de/~u045/weather-chat/`
+  - **Integrated with own hub instance**, not the public hub.
 
-## Creating your own client
+---
 
-1. Set variables in the client code
-2. Modify the code
+## 🚀 Running the Project Locally  
 
-# Deploying on the server
+### **1️⃣ Backend (Flask)**
+```sh
+git clone <repo-url>
+cd web_ai/task3
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
-Follow the same steps as for task 2.
+python hub.py
+python channel.py
 
-Don't forget to adjust the variables in the client code. 
-
-You don't need to run the hub but use the public hub:
-
-http://vm146.rz.uni-osnabrueck.de/hub
-SERVER_AUTHKEY = 'Crr-K24d-2N'
-
-You don't need to start your channel explicitly because the Apache server will do that for you.
-
-But don't forget to register your channel server with the hub (see above).
+flask --app channel.py register
+cd weather-chat
+npm install
+npm run dev
