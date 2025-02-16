@@ -4,7 +4,12 @@ const SERVER_URL = "http://vm146.rz.uni-osnabrueck.de/u045/channel.wsgi";
 const BASE_URL = window.location.hostname === "localhost" ? LOCAL_URL : SERVER_URL;
 
 // Hub URL (for fetching available channels)
-const HUB_URL = "http://localhost:5555";
+const LOCAL_HUB_URL = "http://localhost:5555";
+const SERVER_HUB_URL = "http://vm146.rz.uni-osnabrueck.de/u045/hub.wsgi";
+const HUB_URL = window.location.hostname === "localhost" ? LOCAL_HUB_URL : SERVER_HUB_URL;
+
+// Export functions
+export { BASE_URL, HUB_URL };
 
 /**
  * Fetch all channels from the hub
