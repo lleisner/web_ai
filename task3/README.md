@@ -57,10 +57,13 @@ This project implements a **distributed message board channel** named **Weather 
 ## Running the Project Locally  
 
 ```sh
-git clone <repo-url>
+git clone https://github.com/lleisner/web_ai.git
 cd web_ai/task3
+
+# Optional, activate virtual env. E.g.:
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
+
 pip install -r requirements.txt
 
 python hub.py
