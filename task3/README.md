@@ -56,7 +56,6 @@ This project implements a **distributed message board channel** named **Weather 
 
 ## Running the Project Locally  
 
-### **1️⃣ Backend (Flask)**
 ```sh
 git clone <repo-url>
 cd web_ai/task3
